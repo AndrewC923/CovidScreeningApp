@@ -1,0 +1,118 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.main-div{
+    padding: 300px 0;
+    margin: auto;
+    width: 75%;
+    text-align: center;
+    
+}
+.index-container{
+    background-image: url(indeximage.jpg);
+    width:100%;
+    height: 100%;
+    padding-top: 30px;
+    margin-bottom: 40px;
+    
+}
+.covid-form-div{
+    padding-top:30px;
+    margin: auto;
+    width: 75%;
+}
+.h1{
+    font-size: 31px;
+    text-shadow: 2px 2px black;
+    color:white;
+}
+.form-prompt{
+    font-size:14px;
+    color:white;
+    
+}
+.email-txtbox{
+    font-size: 14px;
+    padding:8px;
+}
+.email-submit-btn{
+    border: none;
+    background-color: rgb(214, 39, 39);
+    color: white;
+    padding:20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.email-submit-btn:hover{
+    background-color: rgb(173, 31, 35);
+    cursor: pointer;
+}
+.submit-btn{
+    border: none;
+    background-color: rgb(214, 39, 39);
+    color: white;
+    left: 50%;
+    padding:20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 50%;
+    border-radius: 10px;
+}
+.submit-btn:hover{
+    background-color: rgb(173, 31, 35);
+    cursor: pointer;
+}
+
+fieldset{
+    margin-top: 20px;
+    padding:20px;
+}
+legend{
+    
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input, select{
+    border: .5px solid;
+    padding:30px;
+    border-radius:5px;
+    font-size: 12px;
+}
+.error{
+    display:block;
+    color: red;
+    font-size: 10px;
+}
+.input-break{
+    margin-top: 20px;
+}
+.question-div{
+    margin-bottom:15px;
+}
+#errorDiv{
+    margin-top: 10px;
+}
+.thank-you{
+    font-size:68px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+
+}
+.thank-you-div{
+    padding: 390px 0;
+    margin: auto;
+    width: 75%;
+    text-align: center;
+    animation: thank-you-animation;
+    animation-duration: 1.5s;
+}
+@keyframes thank-you-animation{
+    0%{ transform: translateY(-430px); }
+    100%{  }
+}
+.thank-you-body{
+    background-image: url("ThankYou.jpg");
+    position:center;
+}

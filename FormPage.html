@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CovidScreening</title>
+    <link rel="stylesheet" href="CovidStyles.css">
+</head>
+<body>
+    <img src="Logo.JPG">
+    <div class="covid-form-div">
+    <form class="covid-form">
+        <fieldset>
+            <Legend>Do you have any new symptoms or signs?</Legend>
+            <div class="question-div">
+                <label for="coughSymptom">New or worsening cough?</label>
+                <input type="radio" id="coughTrue" name="coughSymptom" value="true">
+                <label for="coughTrue">Yes</label>
+                <input type="radio" id="coughFalse" name="coughSymptom" value="false">
+                <label for="coughFalse">No</label>
+                <p class="error" id="coughSymptomError"></p>
+            </div>
+            <br>
+            <div class="question-div">
+                <label for="shortBreathSymptom">Shortness of breath?</label>
+                <input type="radio" id="shortBreathTrue" name="shortBreathSymptom" value="true">
+                <label for="shortBreathTrue">Yes</label>
+                <input type="radio" id="shortBreathFalse" name="shortBreathSymptom" value="false">
+                <label for="shortBreathFalse">No</label>
+                <p class="error" id="shortBreathError"></p>
+            </div>
+            <br>
+            <div class="question-div">
+                <label for="soreThroatSymptom">Sore Throat?</label>
+                <input type="radio" id="soreThroatTrue" name="soreThroatSymptom" value="true">
+                <label for="soreThroatTrue">Yes</label>
+                <input type="radio" id="soreThroatFalse" name="soreThroatSymptom" value="false">
+                <label for="soreThroatFalse">No</label>
+                <p class="error" id="soreThroatError"></p>
+            </div>
+            <br>
+            <div class="question-div">
+                <label for="runnyNoseSympto+m">Runny nose, sneezing or nasal congestion <br>(in absence of underlying reasons for symptoms such as seasonal allergies and post nasal drip)?</label>
+                <input type="radio" id="runnyNoseTrue" name="runnyNoseSymptom" value="true">
+                <label for="runnyNoseTrue">Yes</label>
+                <input type="radio" id="runnyNoseFalse" name="runnyNoseSymptom" value="false">
+                <label for="runnyNoseFalse">No</label>
+                <p class="error" id="runnyNoseError"></p>
+            </div>
+            <br>
+            <div class="question-div">
+                <label for="hoarseVoiceSymptom">Hoarse Voice?</label>
+                <input type="radio" id="hoarseVoiceTrue" name="hoarseVoiceSymptom" value="true">
+                <label for="hoarseVoiceTrue">Yes</label>
+                <input type="radio" id="hoarseVoiceFalse" name="hoarseVoiceSymptom" value="false">
+                <label for="hoarseVoiceFalse">No</label>
+                <p class="error" id="hoarseVoiceError"></p>
+            </div>
+            <br>
+            <div class="question-div">
+                <label for="difficultySwallowingSymptom">Difficulty Swallowing?</label>
+                <input type="radio" id="difficultySwallowingTrue" name="difficultySwallowingSymptom" value="true">
+                <label for="difficultySwallowingTrue">Yes</label>
+                <input type="radio" id="difficultySwallowingFalse" name="difficultySwallowingSymptom" value="false">
+                <label for="difficultySwallowingFalse">No</label>
+                <p class="error" id="difficultySwallowingError"></p>
+            </div>
+            <br>
+            <div class="question-div">
+                <label for="smellTasteSymptom">New smell or taste disorder(s)?</label>
+                <input type="radio" id="smellTasteTrue" name="smellTasteSymptom" value="true">
+                <label for="smellTasteTrue">Yes</label>
+                <input type="radio" id="smellTasteFalse" name="smellTasteSymptom" value="false">
+                <label for="smellTasteFalse">No</label>
+                <p class="error" id="smellTasteError"></p>
+            </div>
+            <br>
+            <div class="question-div">
+                <label for="nauseaSymptom">Nausea/vomiting, diarrhea, abdominal pain?</label>
+                <input type="radio" id="nauseaTrue" name="nauseaSymptom" value="true">
+                <label for="nauseaTrue">Yes</label>
+                <input type="radio" id="nauseaFalse" name="nauseaSymptom" value="false">
+                <label for="nauseaFalse">No</label>
+                <p class="error" id="nauseaError"></p>
+            </div>
+            <br>
+            <div class="question-div">
+                <label for="fatigueSymptom">Unexplained fatigue/malaise?</label>
+                <input type="radio" id="fatigueTrue" name="fatigueSymptom" value="true">
+                <label for="fatigueTrue">Yes</label>
+                <input type="radio" id="fatigueFalse" name="fatigueSymptom" value="false">
+                <label for="fatigueFalse">No</label>
+                <p class="error" id="fatigueError"></p>
+            </div>
+            <br>
+            <div class="question-div">
+                <label for="chillsSymptom">Chills?</label>
+                <input type="radio" id="chillsTrue" name="chillsSymptom" value="true">
+                <label for="chillsTrue">Yes</label>
+                <input type="radio" id="chillsFalse" name="chillsSymptom" value="false">
+                <label>No</label>
+                <p class="error" id="chillsError"></p>
+            </div>
+            <br>
+            <div class="question-div">
+                <label for="headacheSymptom">Headache?</label>
+                <input type="radio" id="headacheTrue" name="headacheSymptom" value="true">
+                <label for="headacheTrue">Yes</label>
+                <input type="radio" id="headacheFalse" name="headacheSymptom" value="false">
+                <label for="headacheFalse">No</label>
+                <p class="error" id="headacheError"></p>
+            </div>
+            <br>
+            
+        </fieldset>
+        <fieldset>
+            
+            <div class="question-div">
+                <label for="travelHistory">Have you travelled outside of Canada or had close contact with anyone that has travelled outside of Canada in the past 14 days?</label>
+                <br>
+                <input class="input-break" type="radio" id="travelHistoryTrue" name="travelHistory" value="true">
+                <label for="travelHistoryTrue">Yes</label>
+                <input class="input-break" type="radio" id="travelHistoryFalse" name="travelHistory" value="false">
+                <label for="travelHistoryFalse">No</label>
+                <p class="error" id="travelHistoryError"></p>
+            </div>
+            <br>
+            <div class="question-div">
+                <label for="feverSymptom">Do you have a fever?</label>
+                <br>
+                <input class="input-break" type="radio" id="feverSymptomTrue" name="feverSymptom" value="true">
+                <label for="feverSymptomTrue">Yes</label>
+                <input class="input-break" type="radio" id="feverSymptomFalse" name="feverSymptom" value="false">
+                <label for="feverSymptomFalse">No</label>
+                <p class="error" id="feverSymptomError"></p>
+            </div>
+            <br>
+            <div class="question-div">
+                <label for="contactHistory">Have you had close contact with anyone with respiratory illness or a confirmed or probable case of COVID-19?</label>
+                <br>
+                <input class="input-break" type="radio" id="contactHistoryTrue" name="contactHistory" value="true">
+                <label for="contactHistoryTrue">Yes</label>
+                <input class="input-break" type="radio" id="contactHistoryFalse" name="contactHistory" value="false">
+                <label for="contactHistoryalse">No</label>
+                <p class="error" id="contactHistoryError"></p>
+            </div>
+            <br>
+        </fieldset>
+        <input class="submit-btn" type="button" value="SIGN UP" id="submitBtn">
+    </form>
+ </div>
+ <script src="FormPage.js"></script>
+</body>
+</html>
